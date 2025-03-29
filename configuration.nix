@@ -39,8 +39,8 @@
 
   # Enable the X11 windowing system.
   services.xserver.enable = true;
-  services.xserver.displayManager.lightdm.enable = true;
-  services.xserver.desktopManager.pantheon.enable = true;
+  services.xserver.displayManager.sddm.enable = true;
+  services.xserver.desktopManager.plasma6.enable = true;
 
   
 
@@ -77,7 +77,6 @@
       jetbrains.pycharm-community
       jetbrains-toolbox
       pipx
-      feishu
       oterm
       python312Packages.notebook
     ];
@@ -93,6 +92,7 @@
     gh
     fastfetch
     flatpak
+    fcitx5
   ];
 
   fonts.packages = with pkgs; [
