@@ -1,4 +1,4 @@
-# ShanheixOS
+# Shanhe Linux
 Shanhe University Linux Distribution, built on NixOS
 
 ## Installation
