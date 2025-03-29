@@ -63,7 +63,7 @@
   # services.libinput.enable = true;
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
-  users.users.shanheix = {
+  users.users.shanhe = {
     description = "Shanhe";
     isNormalUser = true;
     extraGroups = [ "wheel" ]; # Enable ‘sudo’ for the user.
@@ -113,10 +113,10 @@
   nixpkgs.config.allowUnfree = true;
   # Yes, you! Don't edit the content below. Thanks :)
   environment.etc."issue".text = ''
-  <<< Welcome to ShanheixOS Labs 0.98 "Priest"! >>>
+  <<< Welcome to Shanhe Linux Labs 0.98 "Priest"! >>>
   Shanhe University Linux Distribution for Developers
-  Producted by Shanhe Linux Linux Users Group
-  ShanheixOS Labs, an NixOS-based Linux distribution for AI Professional only
+  Producted by Shanhe University Linux Users Group
+  Shanhe Linux Labs, an NixOS-based Linux distribution for AI Professional only
     
   (C) 2025 Shanhe University
   Licensed under GPL-3.0 LICENSE
@@ -133,12 +133,12 @@
   BUILD_ID="0.98"
   DOCUMENTATION_URL="https://nixos.org/learn.html"
   HOME_URL="https://shanhe.co/"
-  ID=shanheix
+  ID=shanhelinux
   IMAGE_ID=""
   IMAGE_VERSION=""
   LOGO="nix-snowflake"
-  NAME=ShanheixOS
-  PRETTY_NAME="ShanheixOS Labs 0.98 (Priest)"
+  NAME=Shanhe Linux
+  PRETTY_NAME="Shanhe Linux Labs 0.98 (Priest)"
   SUPPORT_URL="https://nixos.org/community.html"
   VARIANT_ID=labs
   VERSION="0.98 (Priest)"
