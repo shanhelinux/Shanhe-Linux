@@ -72,6 +72,7 @@
       jetbrains-toolbox
       vscode
       code-cursor
+    ];
   };
 
   # List packages installed in system profile. To search, run:

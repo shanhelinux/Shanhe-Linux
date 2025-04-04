@@ -75,6 +75,7 @@
       steam
       lutris
       ollama
+    ];
   };
 
   # List packages installed in system profile. To search, run:

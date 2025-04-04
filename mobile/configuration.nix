@@ -72,6 +72,7 @@
       jetbrains-toolbox
       waydroid
       ollama
+    ];
   };
 
   # List packages installed in system profile. To search, run:
