@@ -3,6 +3,7 @@
 # Define color variables
 LIGHT_BLUE='\033[1;34m'
 LIGHT_GREEN='\033[1;32m'
+LIGHT_RED='\033[1;31m'
 NC='\033[0m' # No Color
 
 # Clear the screen first
@@ -147,13 +148,53 @@ if [ $? -ne 0 ]; then
     exit 1
 fi
 
+echo "Please choose the architecture to install:"
+select architecture in x86_64 arm mobile; do
+    case $architecture in
+        x86_64)
+            echo "Please choose the flavor version to install:"
+            select flavor in general ace labs lite neon; do
+                case $flavor in
+                    general|ace|labs|lite|neon)
+                        break
+                        ;;
+                    *)
+                        echo "Invalid option, please choose again."
+                        ;;
+                esac
+            done
+            break
+            ;;
+        arm)
+            echo "Please choose the flavor version to install:"
+            select flavor in lite labs; do
+                case $flavor in
+                    lite|labs)
+                        break
+                        ;;
+                    *)
+                        echo "Invalid option, please choose again."
+                        ;;
+                esac
+            done
+            break
+            ;;
+        mobile)
+            echo "Continuing with mobile architecture..."
+            break
+            ;;
+        *)
+            echo "Invalid option, please choose again."
+            ;;
+    esac
+done
 
 # Copy the configuration files
-cp -r "ShanheixOS/configuration.nix" /mnt/etc/nixos/configuration.nix
+cp -r "Shanhe-Linux/$architecture/$flavor/configuration.nix" /mnt/etc/nixos/configuration.nix
 
 echo "Now you need to configure the configuration for the customization (username, hostname, desktop environments / display managers / wms, packages you want to install etc.). Check https://search.nixos.org for the nixpkgs you want to install and https://nixos.org/manual/nixos/stable for more infomations."
 sleep 5s
-nano /mnt/etc/nixos/configurations.nix
+nano /mnt/etc/nixos/configuration.nix
 
 # Step 5: Begin NixOS installation
 nixos-install -j $(nproc) --cores 1 --option substituters https://mirrors.ustc.edu.cn/nix-channels/store
@@ -164,7 +205,6 @@ else
     echo -e "${LIGHT_RED}NixOS installation failed!${NC}"
     exit 1
 fi
-
 
 # Step 6: Post-installation configuration
 echo -e "${LIGHT_GREEN}Post-installation configuration${NC}"
@@ -179,9 +219,8 @@ if id "$username" &>/dev/null; then
     echo -e "${LIGHT_GREEN}Password for user '$username' has been set.${NC}"
 else
     echo -e "${LIGHT_BLUE}User '$username' does not exist! Please try again!${NC}"
-    exit
+    exit 1
 fi
-
 
 # Installation complete
 logout

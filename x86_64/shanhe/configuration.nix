@@ -39,8 +39,8 @@
 
   # Enable the X11 windowing system.
   services.xserver.enable = true;
-  services.xserver.displayManager.sddm.enable = true;
-  services.xserver.desktopManager.plasma6.enable = true;
+  services.xserver.displayManager.lightdm.enable = true;
+  services.xserver.desktopManager.deepin.enable = true;
 
   
 
@@ -69,17 +69,12 @@
     extraGroups = [ "wheel" ]; # Enable ‘sudo’ for the user.
     packages = with pkgs; [
       chromium
-      python312Packages.huggingface-hub
-      ollama
-      gpt4all
-      lmstudio
-      vscode
-      jetbrains.pycharm-community
       jetbrains-toolbox
-      pipx
-      oterm
-      python312Packages.notebook
-    ];
+      wpsoffice-cn
+      netease-cloud-music-gtk
+      steam
+      lutris
+      ollama
   };
 
   # List packages installed in system profile. To search, run:
@@ -113,10 +108,9 @@
   nixpkgs.config.allowUnfree = true;
   # Yes, you! Don't edit the content below. Thanks :)
   environment.etc."issue".text = ''
-  <<< Welcome to Shanhe Linux Labs 0.98 "Priest"! >>>
+  <<< Welcome to Shanhe Linux 1 "Noah"! >>>
   Shanhe University Linux Distribution for Developers
   Producted by Shanhe University Linux Users Group
-  Shanhe Linux Labs, an NixOS-based Linux distribution for AI Professional only
     
   (C) 2025 Shanhe University
   Licensed under GPL-3.0 LICENSE
@@ -130,7 +124,7 @@
   environment.etc."os-release".text = ''
   ANSI_COLOR="1;34"
   BUG_REPORT_URL="https://github.com/NixOS/nixpkgs/issues"
-  BUILD_ID="0.98"
+  BUILD_ID="1"
   DOCUMENTATION_URL="https://nixos.org/learn.html"
   HOME_URL="https://shanhe.co/"
   ID=shanhelinux
@@ -138,12 +132,12 @@
   IMAGE_VERSION=""
   LOGO="nix-snowflake"
   NAME=Shanhe Linux
-  PRETTY_NAME="Shanhe Linux Labs 0.98 (Priest)"
+  PRETTY_NAME="Shanhe Linux 1 (Noah)"
   SUPPORT_URL="https://nixos.org/community.html"
-  VARIANT_ID=labs
-  VERSION="0.98 (Priest)"
-  VERSION_CODENAME=priest
-  VERSION_ID="0.98"
+  VARIANT_ID=shanhe
+  VERSION="1 (Noah)"
+  VERSION_CODENAME=noah
+  VERSION_ID="1.0"
 '';
 
   nix.settings.substituters = lib.mkForce [ "https://mirrors.ustc.edu.cn/nix-channels/store" ];
