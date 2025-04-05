@@ -197,7 +197,7 @@ sleep 5s
 nano /mnt/etc/nixos/configuration.nix
 
 # Step 5: Begin NixOS installation
-nixos-install -j $(nproc) --cores 1 --option substituters https://mirrors.ustc.edu.cn/nix-channels/store
+nixos-install -j $(nproc) --cores 1
 
 if [ $? -eq 0 ]; then
     echo -e "${LIGHT_GREEN}NixOS installation completed${NC}"
