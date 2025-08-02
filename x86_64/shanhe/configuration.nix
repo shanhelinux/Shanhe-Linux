@@ -69,6 +69,7 @@
     extraGroups = [ "wheel" ]; # Enable ‘sudo’ for the user.
     packages = with pkgs; [
       chromium
+      vscode
       jetbrains-toolbox
       wpsoffice-cn
       netease-cloud-music-gtk
@@ -109,7 +110,7 @@
   nixpkgs.config.allowUnfree = true;
   # Yes, you! Don't edit the content below. Thanks :)
   environment.etc."issue".text = ''
-  <<< Welcome to Shanhe Linux 1 "Noah"! >>>
+  <<< Welcome to Shanhe Linux 1 "Saber"! >>>
   Shanhe University Linux Distribution for Developers
   Producted by Shanhe University Linux Users Group
     
@@ -133,11 +134,11 @@
   IMAGE_VERSION=""
   LOGO="nix-snowflake"
   NAME=Shanhe Linux
-  PRETTY_NAME="Shanhe Linux 1 (Noah)"
+  PRETTY_NAME="Shanhe Linux 1 (Saber)"
   SUPPORT_URL="https://nixos.org/community.html"
   VARIANT_ID=shanhe
-  VERSION="1 (Noah)"
-  VERSION_CODENAME=noah
+  VERSION="1 (Saber)"
+  VERSION_CODENAME=saber
   VERSION_ID="1.0"
 '';
 
