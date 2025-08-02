@@ -77,7 +77,6 @@
       jetbrains.pycharm-community
       jetbrains-toolbox
       pipx
-      oterm
       python312Packages.notebook
       python312Packages.jupyterlab
     ];
@@ -114,7 +113,7 @@
   nixpkgs.config.allowUnfree = true;
   # Yes, you! Don't edit the content below. Thanks :)
   environment.etc."issue".text = ''
-  <<< Welcome to Shanhe Linux Labs 1 "Noah"! >>>
+  <<< Welcome to Shanhe Linux Labs 1 "Saber"! >>>
   Shanhe University Linux Distribution for Developers
   Producted by Shanhe University Linux Users Group
   Shanhe Linux Labs, an NixOS-based Linux distribution for AI Professional only
@@ -139,11 +138,11 @@
   IMAGE_VERSION=""
   LOGO="nix-snowflake"
   NAME=Shanhe Linux
-  PRETTY_NAME="Shanhe Linux 1 (Noah)"
+  PRETTY_NAME="Shanhe Linux 1 (Saber)"
   SUPPORT_URL="https://nixos.org/community.html"
   VARIANT_ID=labs
-  VERSION="1 (Noah)"
-  VERSION_CODENAME=noah
+  VERSION="1 (Saber)"
+  VERSION_CODENAME=saber
   VERSION_ID="1.0"
 '';
 
