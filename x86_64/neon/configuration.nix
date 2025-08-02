@@ -109,7 +109,7 @@
   nixpkgs.config.allowUnfree = true;
   # Yes, you! Don't edit the content below. Thanks :)
   environment.etc."issue".text = ''
-  <<< Welcome to Shanhe Linux Neon 1 "Noah"! >>>
+  <<< Welcome to Shanhe Linux Neon 1 "Saber"! >>>
   Shanhe University Linux Distribution for Developers
   Producted by Shanhe University Linux Users Group
   Shanhe Linux Neon, an NixOS-based Linux distribution for DevOps Engineers and Developers
@@ -134,11 +134,11 @@
   IMAGE_VERSION=""
   LOGO="nix-snowflake"
   NAME=Shanhe Linux
-  PRETTY_NAME="Shanhe Linux Neon 1 (Noah)"
+  PRETTY_NAME="Shanhe Linux Neon 1 (Saber)"
   SUPPORT_URL="https://nixos.org/community.html"
   VARIANT_ID=neon
-  VERSION="1 (Noah)"
-  VERSION_CODENAME=noah
+  VERSION="1 (Saber)"
+  VERSION_CODENAME=saber
   VERSION_ID="1.0"
 '';
 
