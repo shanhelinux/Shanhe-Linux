@@ -129,11 +129,11 @@
   IMAGE_VERSION=""
   LOGO="nix-snowflake"
   NAME=Shanhe Linux Ace
-  PRETTY_NAME="Shanhe Linux Ace 1 (Noah)"
+  PRETTY_NAME="Shanhe Linux Ace 1 (Saber)"
   SUPPORT_URL="https://nixos.org/community.html"
-  VARIANT_ID=ace
-  VERSION="1 (Noah)"
-  VERSION_CODENAME=noah
+  VARIANT_ID=saber
+  VERSION="1 (Saber)"
+  VERSION_CODENAME=saber
   VERSION_ID="1.0"
 '';
 
