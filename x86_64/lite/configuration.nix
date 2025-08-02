@@ -132,11 +132,11 @@
   IMAGE_VERSION=""
   LOGO="nix-snowflake"
   NAME=Shanhe Linux Lite
-  PRETTY_NAME="Shanhe Linux Lite 1 (Noah)"
+  PRETTY_NAME="Shanhe Linux Lite 1 (Saber)"
   SUPPORT_URL="https://nixos.org/community.html"
   VARIANT_ID=lite
-  VERSION="1 (Noah)"
-  VERSION_CODENAME=noah
+  VERSION="1 (Saber)"
+  VERSION_CODENAME=saber
   VERSION_ID="1.0"
 '';
 
