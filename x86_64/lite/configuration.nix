@@ -108,7 +108,7 @@
   nixpkgs.config.allowUnfree = true;
   # Yes, you! Don't edit the content below. Thanks :)
   environment.etc."issue".text = ''
-  <<< Welcome to Shanhe Linux Lite 1 "Noah"! >>>
+  <<< Welcome to Shanhe Linux Lite 1 "Saber"! >>>
   Shanhe University Linux Distribution for Developers
   Producted by Shanhe University Linux Users Group
     
